@@ -1,0 +1,222 @@
+@font-face {
+    font-family: 'Source Sans Pro regular';
+    src: url(../public/fonts/source-sans-pro.regular.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro regular';
+}
+:root{
+    --primary-yellow: #FFC836;
+    --primary-red: #BD0017;
+    --side-bar: #F1F1F1;
+    --main-text: #292929;
+    --box-stroke: #6E6E6E;
+    --main-font: 'Source Sans Pro regular';
+}
+
+/* GENERAL */
+a{
+    color: black;
+    text-decoration: none;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.justify-center{
+    justify-content: center;
+}
+.justify-end{
+    justify-content: flex-end;
+}
+.flex-column{
+    flex-direction: column;
+}
+.align-end{
+    align-items: flex-end;
+}
+.align-center{
+    align-items: center;
+}
+.text-center{
+    text-align: center;
+}
+.gap-10{
+    gap: 10px;
+}
+.mb-50{
+    margin-bottom: 50px;
+}
+.margin-auto{
+    margin-left: auto;
+    margin-right: auto;
+}
+.width-70{
+    width: 70%;
+}
+.width-100{
+    width: 100%;
+}
+.large-2{
+    width: calc(50% - 10px);
+}
+.btn-yellow{
+    background-color: var(--primary-yellow);
+    border: none;
+    padding: 16px 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    display: inline-block;
+}
+.btn-mono{
+    background-color: transparent;
+    padding: 16px 32px;
+    border: 2px solid black;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Error pages */
+.container-error{
+    width: 100vw;
+    height: 100vh;
+    background-image: url();
+}
+.container-error div img, .container-error div p{
+    margin-bottom: 40px;
+}
+.container-error div p{
+    font-size: 2rem;
+}
+
+/* HEADER */
+header{
+    padding: 20px 50px;
+    height: 100px;
+}
+
+/* CONNEXION FORM */
+#form-connexion{
+    margin: 10vh auto 0 auto;
+    width: 40%;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.25);
+    gap: 30px;
+}
+#form-connexion>div:nth-child(2){
+    gap: 10px;
+}
+#form-connexion div div{
+    gap: 10px;
+}
+
+/* ADMIN HOME PAGE */
+.admin-btn-container{
+    margin-top: 100px;
+    gap: 40px;
+}
+.admin-btn-container .btn-yellow{
+    font-size: 3rem;
+}
+
+/* TABLE STYLE */
+.table-container table{
+    width: 70%;
+    border-collapse: collapse;
+    margin: 50px auto;
+}
+.table-container th{
+    background-color: var(--primary-yellow);
+}
+.table-container th, .table-container td{
+    padding: 10px 20px;
+    border: 1px solid var(--primary-yellow);
+}
+.table-container a{
+    text-decoration: underline;
+    margin-right: 10px;
+}
+
+/* ADMIN PRODUCT MODIF PAGE */
+.form-modif-container{
+    width: 80%;
+    padding: 50px;
+    margin: 10vh auto 0 auto;
+    border-radius: 20px;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.25);
+}
+.form-modif-container div div div{
+    margin-bottom: 20px;
+}
+.form-modif-container input[type="text"]{
+    width: 80%;
+    padding: 5px;
+}
+.form-modif-container textarea{
+    padding: 5px;
+}
+.form-modif-container input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+}
+.button-container{
+    text-align: center;
+}
+/* ADMIN USER MODIF PAGE */
+.form-modif-user-container{
+    width: 50%;
+    padding: 50px;
+    margin: 10vh auto 0 auto;
+    border-radius: 20px;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.25);
+}
+.form-modif-user-container label{
+    width: 100%;
+}
+.form-modif-user-container input{
+    width: 100%;
+    padding: 5px;
+}
+.form-modif-user-container div div {
+    margin-bottom: 20px;
+}
+
+/* PREPARATOR PAGE */
+.orders-table-container{
+    width: 80%;
+    height: calc(100vh - 240px);
+    margin: 50px auto;
+}
+.order-detail{
+    width: 20%;
+    padding: 20px;
+    background-color: antiquewhite;
+}
+.order-detail>div{
+    margin-bottom: 10px;
+}
+.order-detail p{
+    font-weight: 700;
+}
+.order-detail ul{
+    list-style: none;
+}
+.order-detail ul li{
+    padding-left: 10px;
+}
+.orders-table-container .table-container{
+    overflow-y: scroll;
+    width: 80%;
+}
+.orders-table-container .table-container table{
+    margin: 0;
+    width: 100%;
+}
