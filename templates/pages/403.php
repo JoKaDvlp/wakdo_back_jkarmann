@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Accés refusé, vous n'avez pas les droits pour y accéder">
     <title>403 : Accès non autorisée</title>
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="shortcut icon" href="/public/images/logo.png" type="image/png">
 </head>
 <body>
     <div class="container-error flex justify-center align-center">

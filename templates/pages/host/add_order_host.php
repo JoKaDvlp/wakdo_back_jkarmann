@@ -12,8 +12,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Page d'ajout d'une commande par l'hôte d'accueil">
     <title>Ajouter commande</title>
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="shortcut icon" href="/public/images/logo.png" type="image/png">
 </head>
 <body>
     <?php include "templates/fragments/header.php" ?>
