@@ -18,6 +18,7 @@
     <title>Admin : modification du produit <?= $product->id ?></title>
     <link rel="stylesheet" href="/css/style.css">
     <link rel="shortcut icon" href="/public/images/logo.png" type="image/png">
+    <link rel="canonical" href="http://http://exam-back.jkarmann.mywebecom.ovh/admin/products/modif/">
 </head>
 <body>
     <?php include_once "templates/fragments/header.php" ?>
