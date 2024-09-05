@@ -41,7 +41,7 @@
                             <label for="role">Rôle</label>
                             <select name="role">
                                 <?php foreach ($listRole as $role) {?>
-                                    <option value="<?= $role->id ?>" <?= $role->role === $user->getRole() ? "selected" : "" ?>><?= $role->role ?></option>
+                                    <option value="<?= $role->id ?>" <?= $role->role === $user->getRole() ? "selected" : "" ?>><?= htmlentities($role->role) ?></option>
                                 <?php } ?>
                             </select>
                         </div>

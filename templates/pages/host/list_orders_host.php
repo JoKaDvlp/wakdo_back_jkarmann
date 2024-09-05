@@ -41,8 +41,8 @@
                                 <td><?= htmlentities($order->table_number) ?></td>
                                 <td><?= htmlentities($order->status) ?></td>
                                 <td>
-                                    <button class="btn-view-details" data-url="/host/orders/details/<?= $order->id ?>">Détails</button>
-                                    <button class="btn-ready-status" data-url="/host/orders/ready/<?= $order->id ?>">Remise</button>
+                                    <button class="btn-view-details" data-url="/host/orders/details/<?= htmlentities($order->id) ?>">Détails</button>
+                                    <button class="btn-ready-status" data-url="/host/orders/ready/<?= htmlentities($order->id) ?>">Remise</button>
                                 </td>
                             </tr>
                         <?php } ?>

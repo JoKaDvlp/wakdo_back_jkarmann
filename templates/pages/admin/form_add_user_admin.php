@@ -40,7 +40,7 @@
                             <label for="role">Rôle</label>
                             <select name="role">
                                 <?php foreach ($listRole as $role) {?>
-                                    <option value="<?= $role->id ?>"><?= $role->role ?></option>
+                                    <option value="<?= htmlentities($role->id) ?>"><?= htmlentities($role->role) ?></option>
                                 <?php } ?>
                             </select>
                         </div>

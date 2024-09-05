@@ -9,7 +9,7 @@
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -44,8 +44,8 @@
                             <td><?= htmlentities($user->identifier) ?></td>
                             <td><?= htmlentities($user->getRole()) ?></td>
                             <td>
-                                <a href="/admin/users/modif/<?=$user->id?>">Modifier</a>
-                                <a href="/admin/users/delete/<?=$user->id?>">Supprimer</a>
+                                <a href="/admin/users/modif/<?=htmlentities($user->id)?>">Modifier</a>
+                                <a href="/admin/users/delete/<?=htmlentities($user->id)?>">Supprimer</a>
                             </td>
                         </tr>
                     <?php

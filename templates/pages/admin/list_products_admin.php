@@ -41,15 +41,15 @@
                     foreach ($productsList as $product) {
                     ?>
                         <tr>
-                            <td><?= $product->name ?></td>
-                            <td><?= $product->price ?> €</td>
-                            <td><?= $product->image ?></td>
-                            <td><?= $product->is_dispo ? "oui" : "non" ?></td>
-                            <td><?= $product->getTarget("category")->name ?></td>
-                            <td><?= $product->is_menu_product ? "oui" : "non" ?></td>
+                            <td><?= htmlentities($product->name) ?></td>
+                            <td><?= htmlentities($product->price) ?> €</td>
+                            <td><?= htmlentities($product->image) ?></td>
+                            <td><?= htmlentities($product->is_dispo) ? "oui" : "non" ?></td>
+                            <td><?= htmlentities($product->getTarget("category")->name) ?></td>
+                            <td><?= htmlentities($product->is_menu_product ? "oui" : "non") ?></td>
                             <td>
-                                <a href="/admin/products/modif/<?=$product->id?>">Modifier</a>
-                                <a href="/admin/products/delete/<?=$product->id?>">Supprimer</a>
+                                <a href="/admin/products/modif/<?=htmlentities($product->id)?>">Modifier</a>
+                                <a href="/admin/products/delete/<?=htmlentities($product->id)?>">Supprimer</a>
                             </td>
                         </tr>
                     <?php
