@@ -35,6 +35,10 @@ btnsViewDetails.forEach(btn => {
     })
 })
 
+/**
+ * Build details template with data received from fetch
+ * @param {JSON} data 
+ */
 function buildDetailsTemplate(data){
     let html = "";
     

@@ -7,6 +7,9 @@ use App\Utils\session;
 
 class connexionControllers extends abstractController
 {
+    /**
+     * Rôle : Générer et afficher le formulaire de connexion à l’application
+     */
     function displayConnexionForm(){
         if (session::isconnected()) {
             return $this->redirectToRoute("/connexion");
@@ -14,6 +17,10 @@ class connexionControllers extends abstractController
             return $this->render("form_connexion");
         }
     }
+    /**
+     * Rôle : En fonction du rôle de l’utilisateur, vérifier si l'utilisateur existe, comparer le mdp avec celui de la BDD puis  générer et afficher la page qui lui est associé
+     * @param $_GET : userRole
+     */
     function displayUserView(){
         if (session::isconnected()) {
             $user = new user(session::idconnected());
@@ -37,6 +44,9 @@ class connexionControllers extends abstractController
             return $this->redirectToRoute("/");
         }
     }
+    /**
+     * Rôle : Deconnecte l'utilisateur en cours
+     */
     function deconnectUser(){
         session::deconnect();
         return $this->redirectToRoute("/");

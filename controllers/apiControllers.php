@@ -9,6 +9,10 @@ use App\Utils\abstractController;
 
 class apiControllers extends abstractController
 {
+    /**
+     * Rôle : API d'ajout de commande dans la BDD
+     * @param $body : JSON d'une commande
+     */
     function addOrder(){
         header("Access-Control-Allow-Origin: http://exam-front.jkarmann.mywebecom.ovh");
         header("Access-Control-Allow-Methods: POST, GET, OPTIONS");
@@ -34,7 +38,9 @@ class apiControllers extends abstractController
         header('Content-Type: application/json; charset=utf-8');
         echo json_encode(['message'=>'ajouté avec succés']);
     }
-
+    /**
+     * Rôle : API renvoyant une liste des produits au format JSON
+     */
     function listProducts(){
         header("Access-Control-Allow-Origin: http://exam-front.jkarmann.mywebecom.ovh");
         header("Access-Control-Allow-Methods: GET, OPTIONS");
@@ -51,7 +57,9 @@ class apiControllers extends abstractController
         header('Content-Type: application/json; charset=utf-8');
         echo json_encode($productsListJson);
     }
-
+    /**
+     * Rôle : API renvoyant le liste des catégories au format JSON
+     */
     function listCategories(){
         header("Access-Control-Allow-Origin: http://exam-front.jkarmann.mywebecom.ovh");
         header("Access-Control-Allow-Methods: GET, OPTIONS");
@@ -68,7 +76,9 @@ class apiControllers extends abstractController
         header('Content-Type: application/json; charset=utf-8');
         echo json_encode($categoriesList);
     }
-
+    /**
+     * Rôle : API préparant une commande dans la BDD pour gérer les numéros de commandes
+     */
     function prepareOrder(){
         header("Access-Control-Allow-Origin: http://exam-front.jkarmann.mywebecom.ovh");
         header("Access-Control-Allow-Methods: GET, OPTIONS");
