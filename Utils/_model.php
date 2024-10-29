@@ -317,7 +317,7 @@ class _model {
     function listChamps() {
         // Rôle : construire la liste des champs de la table pour une requête SELECT
         // Paramètres : néant
-        // Retour : texte du type ìd`, `nom`, `prenom`
+        // Retour : texte du type `id`, `nom`, `prenom`
         $liste = [];
         foreach ($this->fields as $nomChamp) {
             $liste[] = "`$nomChamp`";

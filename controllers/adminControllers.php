@@ -147,6 +147,7 @@ class adminControllers extends abstractController
         $user->loadFromTab($_POST);
         if ($_POST["new-password"] === $_POST["new-password-verification"]) {
             $user->set("password", $_POST["new-password"]);
+            $user->is_active = 1;
         }
         $user->insert();
         return $this->redirectToRoute("/admin/users");
